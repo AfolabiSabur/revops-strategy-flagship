@@ -1,0 +1,11 @@
+play_id,name,investment,npv,risk,ratio,selected
+P01,Expand Enterprise Sales,1.5,2.4,0.35,1.5999999999999999,True
+P02,Self-serve Growth,0.6,0.9,0.2,1.5,False
+P03,Geographic Expansion,1.0,1.6,0.3,1.6,True
+P04,Partner Channel Build,0.8,1.2,0.25,1.4999999999999998,False
+P05,Pricing & Packaging,0.4,0.7,0.2,1.7499999999999998,True
+P06,Reduce Churn Program,0.5,0.9,0.15,1.8,True
+P07,New Product A,2.0,3.2,0.45,1.6,False
+P08,New Product B,1.6,2.3,0.4,1.4374999999999998,False
+P09,AI Assist for Sales,0.7,1.0,0.3,1.4285714285714286,False
+P10,Marketing Efficiency,0.3,0.5,0.15,1.6666666666666667,True

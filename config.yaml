@@ -1,0 +1,17 @@
+seed: 42
+economics:
+  ltv_margin: 0.75
+  ltv_years: 3
+pipeline:
+  coverage_target_x: 3.0
+  quota:
+    SMB: 120000
+    Mid-Market: 300000
+    Enterprise: 900000
+scenarios:
+  bull_growth_annual: 0.30
+  base_growth_annual: 0.18
+  bear_growth_annual: 0.08
+portfolio:
+  budget: 4.0
+  risk_cap: 1.2
