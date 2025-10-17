@@ -6,8 +6,9 @@
 [![Release](https://img.shields.io/github/v/release/AfolabiSabur/revops-strategy-flagship?display_name=tag)](../../releases)
 [![Pages](https://img.shields.io/badge/GitHub%20Pages-live-brightgreen)](https://afolabisabur.github.io/revops-strategy-flagship/)
 
-**Downloads:** see the latest [Release](../../releases) or direct ZIP:
-[https://github.com/AfolabiSabur/revops-strategy-flagship/releases/download/v0.1.0/strategy_flagship_pack.zip](https://github.com/AfolabiSabur/revops-strategy-flagship/releases/download/v0.1.0/strategy_flagship_pack.zip)
+**Downloads:** see the latest [Release](../../releases) or direct ZIP:  
+https://github.com/AfolabiSabur/revops-strategy-flagship/releases/latest/download/strategy_flagship_pack.zip
+
 
 End-to-end **Revenue Operations (RevOps)** + **Corporate Development (Corp Dev)** demo:
 data → metrics → scenarios → M&A → portfolio → **one-page HTML report**.
