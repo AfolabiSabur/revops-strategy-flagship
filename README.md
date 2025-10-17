@@ -4,6 +4,8 @@ https://afolabisabur.github.io/revops-strategy-flagship/
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/AfolabiSabur/revops-strategy-flagship?display_name=tag)](../../releases)
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-live-brightgreen)](https://afolabisabur.github.io/revops-strategy-flagship/)
+
 
  **Downloads:** see the latest [Release](../../releases) or direct ZIP: https://github.com/AfolabiSabur/revops-strategy-flagship/releases/download/v0.1.0/strategy_flagship_pack.zip
 
@@ -13,7 +15,17 @@ data → metrics → scenarios → M&A → portfolio → **one-page HTML report*
 
 All data is synthetic. Assumptions live in `config.yaml`.
 
+Your screenshots aren’t rendering because the code fence under **Quick start** never closes, so everything after it (including the `<img>` tags) is being treated as code. You also didn’t close the `<details>` tag.
+
+Replace everything **from “## Quick start” downward** with the block below (copy–paste exactly):
+
+````markdown
 ## Quick start
+```bash
+python run.py
+# Windows users can double-click run.bat
+````
+
 <details><summary>Run order (for transparency)</summary>
 
 ```bash
@@ -27,9 +39,12 @@ python src/compute_kpis.py
 python src/build_sparklines.py
 python src/build_report.py
 python src/build_zip.py
+```
 
+</details>
 
 ## Screenshots
+
 <p>
   <img src="docs/shot_funnel.png" alt="Funnel counts by stage" width="45%">
   <img src="docs/shot_cac_ltv.png" alt="CAC vs LTV by segment" width="45%">
@@ -37,6 +52,9 @@ python src/build_zip.py
 <p>
   <img src="docs/shot_scenarios.png" alt="Revenue projection scenarios" width="60%">
 </p>
+
+
+
 
 
 
