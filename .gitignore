@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+*.DS_Store
+.vscode/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+Thumbs.db
+desktop.ini
