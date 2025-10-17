@@ -1,0 +1,66 @@
+name: Deploy Report to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]   # deploy anytime you push to main
+  workflow_dispatch:      # allow manual runs
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Run the pipeline WITHOUT opening a browser
+      - name: Generate data, charts, models, report
+        run: |
+          python src/generate_data.py
+          python src/build_charts.py
+          python src/scenario_planner.py
+          python src/deal_model.py
+          python src/portfolio_optimizer.py
+          python src/compute_kpis.py
+          python src/build_sparklines.py
+          python src/build_report.py
+
+      - name: Prepare static site
+        run: |
+          mkdir -p site
+          cp exports/flagship_strategy_report.html site/index.html
+          cp -r charts site/charts
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
