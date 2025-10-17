@@ -1,4 +1,8 @@
 # revops-strategy-flagship (synthetic)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/AfolabiSabur/revops-strategy-flagship?display_name=tag)](../../releases)
+
+ **Downloads:** see the latest [Release]https://github.com/AfolabiSabur/revops-strategy-flagship/releases/download/v0.1.0/strategy_flagship_pack.zip
 
 End-to-end **Revenue Operations (RevOps)** + **Corporate Development (Corp Dev)** demo:
 data → metrics → scenarios → M&A → portfolio → **one-page HTML report**.
